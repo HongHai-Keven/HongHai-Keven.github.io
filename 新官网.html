@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=2.0, minimum-scale=0.5">
+  <title>HongHai Studio · 努力创造，永不停歇</title>
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMzAuODcwNzEiIGhlaWdodD0iMTI4LjQyMjUxIiB2aWV3Qm94PSIwLDAsMTMwLjg3MDcxLDEyOC40MjI1MSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwOC41NDk0NSwtMTIzLjYwMTgyKSI+PGcgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMjEwLjAwNDkyLDIyOC42NzAwNGMwLDAgLTAuNzMzMzcsLTAuNzUwNDYgLTAuNzMzMzcsLTIuODEzMDZjMCwtOC4yMDQ5MSAwLC02MS4yNjU0IDAsLTYxLjI2NTRoMTI5LjU0Mjk5YzAsMCAwLDUzLjYzMDU2IDAsNjEuNTgyOThjMCwxLjkxMDQzIC0wLjgzODEzLDIuNzA3MTkgLTAuODM4MTMsMi43MDcxOWMwLDAgLTAuNDMxNTksMC44NDY4OCAtMi43MTcyMiwwLjg0Njg4Yy0xOS4zODQ5NSwwIC0xMTEuODQ1MTYsMCAtMTIyLjUyOSwwYy0xLjk3ODEzLDAgLTIuNzI1MjUsLTEuMDU4NiAtMi43MjUyNSwtMS4wNTg2eiIgZmlsbD0iI2ZmMDAwMCIgc3Ryb2tlPSIjZmYwMDAwIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTI1MS45NDkyOSwxNjQuMTkzMDJjMCwwIC0xNC4yNjkyMiwwLjA1NzU1IC0yMS4zOTMwNSwwLjA4NjI2Yy03LjEwOTQ3LDAuMDI4NjUgLTIxLjMwNjg3LDAuMDg1OTEgLTIxLjMwNjg3LDAuMDg1OTEiIGZpbGw9IiNmZjAwMDAiIHN0cm9rZT0iI2ZmMDAwMCIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNTIuMjY2NzcsMTYzLjg3NzY4YzAsMTAuNjYwMTkgLTkuNjE2MTEsMTkuMzAyIC0yMS40NzgxOSwxOS4zMDJjLTExLjg2MjA4LDAgLTIxLjQ3ODE5LC04LjY0MTc5IC0yMS40NzgxOSwtMTkuMzAxOThjMCwtMTAuNjYwMTkgOS42MTYxMSwtMTkuMzAxOTkgMjEuNDc4MTksLTE5LjMwMTk5YzExLjg2MjA4LDAgMjEuNDc4MTksOC42NDE4IDIxLjQ3ODE5LDE5LjMwMnoiIGZpbGw9IiNmZjAwMDAiIHN0cm9rZT0iI2ZmMDAwMCIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTI1Mi4yNjY3NywxNjMuODc3NjhjMCwxMC42NjAxOSAtOS42MTYxMSwxOS4zMDIgLTIxLjQ3ODE5LDE5LjMwMmMtMTEuODYyMDgsMCAtMjEuNDc4MTksLTguNjQxNzkgLTIxLjQ3ODE5LC0xOS4zMDE5OGMwLC0xMC42NjAxOSA5LjYxNjExLC0xOS4zMDE5OSAyMS40NzgxOSwtMTkuMzAxOTljMTEuODYyMDgsMCAyMS40NzgxOSw4LjY0MTggMjEuNDc4MTksMTkuMzAyeiIgZmlsbD0iI2ZmMDAwMCIgc3Ryb2tlPSIjZmYwMDAwIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTI5NS41ODUzMSwxNjMuODc3NjhjMCwxMC42NjAxOSAtOS42MTYxMSwxOS4zMDIgLTIxLjQ3ODE5LDE5LjMwMmMtMTEuODYyMDgsMCAtMjEuNDc4MjEsLTguNjQxNzkgLTIxLjQ3ODIxLC0xOS4zMDE5OGMwLC0xMC42NjAxOSA5LjYxNjEzLC0xOS4zMDE5OSAyMS40NzgyMSwtMTkuMzAxOTljMTEuODYyMDgsMCAyMS40NzgxOSw4LjY0MTggMjEuNDc4MTksMTkuMzAyeiIgZmlsbD0iI2ZmMDAwMCIgc3Ryb2tlPSIjZmYwMDAwIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTMzOC45MjAxNiwxNjMuODc3NjhjMCwxMC42NjAxOSAtOS42MTYxMSwxOS4zMDIgLTIxLjQ3ODE5LDE5LjMwMmMtMTEuODYyMDgsMCAtMjEuNDc4MjEsLTguNjQxNzkgLTIxLjQ3ODIxLC0xOS4zMDE5OGMwLC0xMC42NjAxOSA5LjYxNjEzLC0xOS4zMDE5OSAyMS40NzgyMSwtMTkuMzAxOTljMTEuODYyMDgsMCAyMS40NzgxOSw4LjY0MTggMjEuNDc4MTksMTkuMzAyeiIgZmlsbD0iI2ZmMDAwMCIgc3Ryb2tlPSIjZmYwMDAwIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTI2NC41NjYwMSwxNjIuMTgzOTNjMCwtMC42OTAzNiAwLjU1OTY0LC0xLjI1IDEuMjUsLTEuMjVjMC42OTAzNiwwIDEuMjUsMC41NTk2NCAxLjI1LDEuMjVjMCwwLjY5MDM2IC0wLjU1OTY0LDEuMjUgLTEuMjUsMS4yNWMtMC42OTAzNiwwIC0xLjI1LC0wLjU1OTY0IC0xLjI1LC0xLjI1eiIgZmlsbD0iI2ZmMDAwMCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjAuNSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48cGF0aCBkPSJNMzM2LjMyNTYxLDE4My4zNzkyYy0wLjE4NzcyLDAuMTc5MTUgLTAuNDY3NzYsMC4xMDkxNCAtMC40Njc3NiwwLjEwOTE0bC0wLjI1NzU2LC0wLjA3Mjg3bC0wLjQ2MjQ4LC0wLjIxMDIyYy0wLjE3ODQxLC0wLjA3NjM3IC0wLjMwMzQxLC0wLjI1MzUyIC0wLjMwMzQxLC0wLjQ1OTg3YzAsLTAuMjc2MTQgMC4yMjM4NiwtMC41IDAuNSwtMC41YzAuMDE0NzYsMCAwLjAyOTM4LDAuMDAwNjQgMC4wNDM4MSwwLjAwMTg5bDAuNTUzMjksMC4wNDI1NmwtMC4wMDExOSwwLjAxNTUxbDAuMDM4NDUsLTAuMDExMjNjMC4zODEsMC4wODgwNiAwLjc3MDg5LDAuMTQyMyAxLjE2MTEzLDAuMTY3MjhjMCwwIDAuNDk4ODksMC4wMzMyNiAwLjQ2NTYzLDAuNTMyMTVjLTAuMDMzMjYsMC40OTg4OSAtMC41MzIxNSwwLjQ2NTYzIC0wLjUzMjE1LDAuNDY1NjNjLTAuMjQ2NTMsLTAuMDE3MDEgLTAuNDkzMTUsLTAuMDQyNTggLTAuNzM3NzYsLTAuMDc5OTh6IiBmaWxsPSIjZmYwMDAwIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjxwYXRoIGQ9Ik0yMDkuMjg5NjEsMTg2Ljk3NDI5YzAsMCAtMC43NDAxNSwtMC43NDIyIC0wLjc0MDE1LC0yLjc4MjA3YzAsLTguMTE0NTEgMCwtNjAuNTkwMzkgMCwtNjAuNTkwMzloMTMwLjc0MTgzYzAsMCAwLDUzLjAzOTY3IDAsNjAuOTA0NDhjMCwxLjg4OTM4IC0wLjg0NTg4LDIuNjc3MzcgLTAuODQ1ODgsMi42NzczN2MwLDAgLTAuNDM1NTgsMC44Mzc1NSAtMi43NDIzNywwLjgzNzU1Yy0xOS41NjQzNSwwIC0xMTIuODgwMjIsMCAtMTIzLjY2MjkzLDBjLTEuOTk2NDQsMCAtMi43NTA0NywtMS4wNDY5NCAtMi43NTA0NywtMS4wNDY5NHoiIGZpbGw9Im5vbmUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjxwYXRoIGQ9Ik0yMDkuNjIxMDQsMjUwLjk5MzY1YzAsMCAtMC43MzgyNywtMC43MzA2NyAtMC43MzgyNywtMi43Mzg4OGMwLC03Ljk4ODU1IDAsLTU5LjY0OTgzIDAsLTU5LjY0OTgzaDEzMC40MDg1YzAsMCAwLDUyLjIxNjMzIDAsNTkuOTU5MDRjMCwxLjg2MDA2IC0wLjg0MzczLDIuNjM1ODEgLTAuODQzNzMsMi42MzU4MWMwLDAgLTAuNDM0NDcsMC44MjQ1NSAtMi43MzUzOCwwLjgyNDU1Yy0xOS41MTQ0NywwIC0xMTIuNTkyNDIsMCAtMTIzLjM0NzY0LDBjLTEuOTkxMzUsMCAtMi43NDM0NiwtMS4wMzA2OSAtMi43NDM0NiwtMS4wMzA2OXoiIGZpbGw9Im5vbmUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjMxLjQ1MDU0NjY2NjY2Njc4OjU2LjM5ODE3NjU3NTU3ODY0NS0tPg==" type="image/png" sizes="32x32">
+  <!-- 引入 Remix Icon 图标库，简洁现代 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .site-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    /* ---------- 导航栏：白色简约，灵动 ---------- */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+      transition: all 0.25s ease;
+    }
+
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: baseline;
+    }
+
+    .logo-text {
+      font-weight: 600;
+      font-size: 1.4rem;
+      letter-spacing: -0.3px;
+      color: #111;
+    }
+
+    .logo-text span {
+      font-weight: 400;
+      color: #666;
+      margin-left: 4px;
+      font-size: 0.9rem;
+    }
+
+    /* 右侧只保留首页链接与B站图标 */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 450;
+      color: #333;
+      position: relative;
+      padding: 6px 0;
+      transition: color 0.2s ease;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #111;
+      transition: width 0.25s cubic-bezier(0.2, 0.9, 0.4, 1);
+    }
+
+    .nav-link:hover {
+      color: #000;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* B站图标按钮，灵动简约 */
+    .bilibili-icon-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #444;
+      font-size: 1.5rem;
+      transition: transform 0.2s ease, color 0.2s;
+      text-decoration: none;
+      line-height: 1;
+    }
+
+    .bilibili-icon-link:hover {
+      color: #000;
+      transform: translateY(-1px);
+    }
+
+    /* 主要内容 */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 32px 80px; /* 增加上下内边距，防止卡片弹起时被遮挡 */
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* 大标题区域完全居中 */
+    .hero-section {
+      text-align: center;
+      margin-bottom: 64px;
+      margin-top: 20px;
+    }
+
+    .main-title {
+      font-size: clamp(3.2rem, 10vw, 5.4rem);
+      font-weight: 650;
+      letter-spacing: -1.2px;
+      color: #0a0a0a;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      transition: letter-spacing 0.3s ease;
+    }
+
+    .main-title:hover {
+      letter-spacing: -0.5px;
+    }
+
+    .sub-title {
+      font-size: 1.3rem;
+      font-weight: 350;
+      color: #4a4a4a;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-top: 1px solid #e0e0e0;
+      display: inline-block;
+      padding-top: 14px;
+      margin-top: 8px;
+      transition: color 0.25s;
+    }
+
+    .sub-title:hover {
+      color: #1a1a1a;
+    }
+
+    /* 横向项目列表 - 改为居中布局 */
+    .projects-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* 让内容居中 */
+    }
+
+    .section-label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: #888;
+      margin-bottom: 28px;
+      text-transform: uppercase;
+      border-left: 3px solid #ccc;
+      padding-left: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      align-self: flex-start; /* 标签左对齐，但整体区块居中 */
+      margin-left: 0;
+    }
+
+    /* 横向滚动容器 - 使用flex居中，并给予足够的padding防止遮挡 */
+    .horizontal-scroll {
+      display: flex;
+      gap: 28px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 20px 16px 20px 16px; /* 上下增加padding，为卡片弹起留出空间 */
+      margin: -20px 0; /* 负边距补偿padding，保持视觉位置 */
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: #d4d4d4 transparent;
+      justify-content: center; /* 卡片居中 */
+      width: 100%;
+    }
+
+    .horizontal-scroll::-webkit-scrollbar {
+      height: 5px;
+      background: transparent;
+    }
+
+    .horizontal-scroll::-webkit-scrollbar-thumb {
+      background: #c0c0c0;
+      border-radius: 10px;
+    }
+
+    /* 项目卡片：调整边距，防止弹起遮挡 */
+    .project-card {
+      flex: 0 0 280px;
+      background: #ffffff;
+      border: 1px solid #f0f0f0;
+      border-radius: 20px;
+      padding: 28px 22px 24px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(2px);
+      margin: 12px 0; /* 给卡片上下额外的边距，防止hover弹起时被截断 */
+      position: relative;
+      z-index: 1;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px); /* 弹起效果 */
+      box-shadow: 0 24px 36px -16px rgba(0, 0, 0, 0.12); /* 增强阴影 */
+      border-color: #e0e0e0;
+      background: #ffffff;
+      z-index: 10; /* 确保弹起时在其他元素之上 */
+    }
+
+    .card-badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      color: #6b6b6b;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .card-badge i {
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .project-title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #121212;
+      margin-bottom: 12px;
+      line-height: 1.2;
+      letter-spacing: -0.4px;
+      word-break: break-word;
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+      font-weight: 350;
+      margin-bottom: 24px;
+      flex: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #eeeeee;
+      padding-top: 16px;
+      margin-top: 8px;
+      color: #777;
+      font-size: 0.8rem;
+      font-weight: 450;
+    }
+
+    .card-footer i {
+      font-size: 1.1rem;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover .card-footer i {
+      transform: translateX(4px);
+      color: #222;
+    }
+
+    /* 自定义提示弹窗：小巧灵动 */
+    .toast-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: 1000;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.2s, opacity 0.25s ease;
+      pointer-events: none;
+    }
+
+    .toast-overlay.active {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .toast-box {
+      background: #ffffff;
+      border: 1px solid #eaeaea;
+      border-radius: 24px;
+      padding: 28px 32px;
+      max-width: 320px;
+      width: 90%;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      transform: scale(0.94);
+      transition: transform 0.3s cubic-bezier(0.34, 1.4, 0.64, 1);
+      background: #ffffff;
+    }
+
+    .toast-overlay.active .toast-box {
+      transform: scale(1);
+    }
+
+    .toast-icon {
+      font-size: 2.2rem;
+      color: #2c2c2c;
+      margin-bottom: 14px;
+    }
+
+    .toast-message {
+      font-size: 1rem;
+      font-weight: 420;
+      color: #1f1f1f;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    .qq-highlight {
+      font-weight: 650;
+      background: #f5f5f5;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin: 0 4px;
+      color: #000;
+      letter-spacing: 0.3px;
+    }
+
+    .toast-close-btn {
+      background: #f3f3f3;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #222;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      background: #f0f0f0;
+      letter-spacing: 0.4px;
+    }
+
+    .toast-close-btn:hover {
+      background: #e4e4e4;
+      transform: scale(1.02);
+    }
+
+    /* 极简页脚 */
+    .footer {
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.8rem;
+      color: #aaa;
+      border-top: 1px solid #f2f2f2;
+      margin-top: 20px;
+      letter-spacing: 0.3px;
+    }
+
+    @media (max-width: 640px) {
+      .nav-container {
+        padding: 0 20px;
+      }
+      
+      .main-content {
+        padding: 40px 20px 60px;
+      }
+      
+      .project-card {
+        flex: 0 0 260px;
+      }
+      
+      .main-title {
+        font-size: 2.8rem;
+      }
+      
+      .horizontal-scroll {
+        justify-content: center;
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- 导航栏：仅首页与右侧B站图标 -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-area">
+          <span class="logo-text">HongHai <span>Studio</span></span>
+        </div>
+        <div class="nav-right">
+          <a href="#" class="nav-link">首页</a>
+          <!-- B站图标，点击跳转指定链接 -->
+          <a href="https://space.bilibili.com/3461576579352959" target="_blank" rel="noopener noreferrer" class="bilibili-icon-link" title="访问B站空间">
+            <i class="ri-bilibili-line"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <!-- 大标题与副标题居中 -->
+      <div class="hero-section">
+        <h1 class="main-title">HongHai Studio</h1>
+        <p class="sub-title">努力创造，永不停歇</p>
+      </div>
+
+      <!-- 横向项目列表：仅包含指定项目，卡片居中 -->
+      <div class="projects-section">
+        <div class="section-label">
+          <i class="ri-stack-line"></i> 项目
+        </div>
+        <div class="horizontal-scroll" id="projectScrollContainer">
+          <!-- 唯一项目卡片：[首发]自适应气泡 -->
+          <div class="project-card" id="projectBubble">
+            <div>
+              <div class="card-badge">
+                <i class="ri-flashlight-line"></i> 首发
+              </div>
+              <h3 class="project-title">自适应气泡</h3>
+              <p class="project-desc">一款好用的自适应气泡。轻量、优雅、智能适配界面。</p>
+            </div>
+            <div class="card-footer">
+              <span>点击查看详情</span>
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </div>
+          <!-- 不再包含其他项目卡片，保持干净 -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 HongHai Studio · 保持创造</span>
+    </footer>
+  </div>
+
+  <!-- 小巧提示弹窗 -->
+  <div class="toast-overlay" id="customToast">
+    <div class="toast-box">
+      <div class="toast-icon">
+        <i class="ri-group-line"></i>
+      </div>
+      <div class="toast-message">
+        请加入QQ群 <span class="qq-highlight">1074518048</span> 下载源码
+      </div>
+      <button class="toast-close-btn" id="closeToastBtn">确 定</button>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const projectCard = document.getElementById('projectBubble');
+      const toastOverlay = document.getElementById('customToast');
+      const closeBtn = document.getElementById('closeToastBtn');
+
+      if (!projectCard || !toastOverlay || !closeBtn) return;
+
+      function openToast() {
+        toastOverlay.classList.add('active');
+      }
+
+      function closeToast() {
+        toastOverlay.classList.remove('active');
+      }
+
+      // 点击项目卡片弹出提示
+      projectCard.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openToast();
+      });
+
+      // 关闭按钮
+      closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeToast();
+      });
+
+      // 点击遮罩关闭
+      toastOverlay.addEventListener('click', function(e) {
+        if (e.target === toastOverlay) {
+          closeToast();
+        }
+      });
+
+      // ESC 关闭
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && toastOverlay.classList.contains('active')) {
+          closeToast();
+        }
+      });
+
+      // B站图标已通过href正常跳转，无需额外脚本。
+    })();
+  </script>
+</body>
+</html>
